@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Page } from "@types/page";
+import { Page } from "../types/page";
 import Options from "./Options";
 import Content from "./Content";
 import styles from '@styles/Text.module.css'

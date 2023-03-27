@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Title from '../components/Title'
 import styles from '@styles/Home.module.css'
-import { Page } from '@types/page'
+import { Page } from '../types/page'
 import TermPage from '@components/TermPage'
 import Mute from '@components/Mute'
 
