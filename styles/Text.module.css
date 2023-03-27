@@ -1,0 +1,19 @@
+.text {
+    font-size: 1em;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.option {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.5em;
+    transition: all 200ms ease-in-out;
+}
+
+.option-title {
+    text-decoration: underline;
+}
