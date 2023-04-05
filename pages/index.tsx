@@ -3,7 +3,6 @@ import Title from '../components/Title'
 import styles from '@styles/Home.module.css'
 import { Page } from '../types/page'
 import TermPage from '@components/TermPage'
-import Mute from '@components/Mute'
 
 const page: Page = {
   title: 'Home',
@@ -37,7 +36,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Mute />
       <div className={styles.content}>
         <Title>Robco Industries TERMLINK PROTOCOL</Title>
         <TermPage page={page} />

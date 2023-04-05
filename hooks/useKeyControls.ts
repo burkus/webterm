@@ -23,6 +23,7 @@ export default function useKeyControls(maxIndex: number) {
             case 'ArrowUp':
                 return decreaseIndex()
             case 'ArrowDown':
+                e.preventDefault()
                 return increaseIndex()
             case 'w':
                 return decreaseIndex()
