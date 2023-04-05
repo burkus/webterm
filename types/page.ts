@@ -1,7 +1,7 @@
 export interface Page {
-    options: Option[]
-    content: Content
     title: string
+    options?: Option[]
+    content?: Content
 }
 
 export interface Option {

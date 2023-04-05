@@ -1,0 +1,13 @@
+{
+    "title": "Projects",
+    "options": [
+        {
+            "name": "Birthday Paradox Calculator",
+            "path": "https://insect-politician.github.io/birthday-paradox"
+        },
+        {
+            "name": "Recoil Sync Demo",
+            "path": "https://quickbits-recoil-atom-family.vercel.app/"
+        }
+    ]
+}

@@ -3,8 +3,21 @@
     flex-direction: column;
     gap: 20px;
     padding-top: 30px;
+    border-top: 3px solid var(--main-text-color);
 }
 
 .content {
     padding: 0 120px;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.optionTitle {
+    font-size: 2em;
+}
+
+.screenContainer {
+    padding: 2em 8em;
 }

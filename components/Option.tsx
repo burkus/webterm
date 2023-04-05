@@ -8,7 +8,7 @@ interface TextProps {
     selected: boolean
 }
 
-const style = { transform: 'translate(50px,0)' }
+const style = { transform: 'translate(20px,0)' }
 
 const Option: FC<TextProps> = ({ children, path, selected }) => {
     return (
