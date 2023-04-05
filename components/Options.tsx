@@ -12,7 +12,7 @@ const Options: FC<OptionsProps> = ({ options }) => {
     const { index } = useKeyControls(options)
 
     return (
-        <div className={pageStyles['option-container']}>
+        <div className={pageStyles.optionContainer}>
             {options.map(({ path, name }, i) =>
                 <Option
                     selected={index === i}

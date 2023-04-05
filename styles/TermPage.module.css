@@ -1,9 +1,14 @@
-.option-container {
+.optionContainer {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-top: 30px;
     border-top: 3px solid var(--main-text-color);
+}
+
+.contentContainer {
+    border-top: 3px solid var(--main-text-color);
+    padding-top: 30px;
 }
 
 .content {
