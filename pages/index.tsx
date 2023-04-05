@@ -6,7 +6,6 @@ import TermPage from '@components/TermPage'
 
 const page: Page = {
   title: 'Home',
-
   options: [
     {
       name: 'I am an option',

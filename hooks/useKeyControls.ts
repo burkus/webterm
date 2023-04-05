@@ -1,21 +1,27 @@
 import { useEffect, useState, useCallback } from "react"
 import useSoundEffects from "./useSoundEffects"
+import { Option } from "../types/page"
 
-export default function useKeyControls(maxIndex: number) {
+export default function useKeyControls(options: Option[]) {
     const [index, setIndex] = useState(0)
     const { clicky } = useSoundEffects()
 
     const increaseIndex = useCallback(() =>
         setIndex(prev => {
             clicky()
-            return (prev + 1) % maxIndex
-        }), [maxIndex, setIndex, clicky])
+            return (prev + 1) % options.length
+        }), [options, setIndex, clicky])
 
     const decreaseIndex = useCallback(() => {
         clicky()
         if (index > 0) setIndex(prev => prev - 1)
-        else setIndex(maxIndex - 1)
-    }, [maxIndex, setIndex, index, clicky])
+        else setIndex(options.length - 1)
+    }, [options, setIndex, index, clicky])
+
+    const followSelectedUrl = useCallback(() => {
+        const selected = options[index]
+        location.href = selected.path
+    }, [index, options])
 
     const handleKeyDown = useCallback((e: KeyboardEvent) => {
         const { key } = e
@@ -29,8 +35,10 @@ export default function useKeyControls(maxIndex: number) {
                 return decreaseIndex()
             case 's':
                 return increaseIndex()
+            case 'Enter':
+                return followSelectedUrl()
         }
-    }, [increaseIndex, decreaseIndex])
+    }, [increaseIndex, decreaseIndex, followSelectedUrl])
 
     useEffect(() => {
         document.addEventListener('keydown', handleKeyDown)

@@ -9,7 +9,7 @@ interface OptionsProps {
 }
 
 const Options: FC<OptionsProps> = ({ options }) => {
-    const { index } = useKeyControls(options.length)
+    const { index } = useKeyControls(options)
 
     return (
         <div className={pageStyles['option-container']}>
