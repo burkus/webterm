@@ -2,6 +2,9 @@ import useSound from "@hooks/useSound";
 import { FC, useCallback } from "react";
 import { GoMute, GoUnmute } from 'react-icons/go'
 
+const style = {
+    background: 'none'
+}
 
 const Mute: FC = () => {
     const { mute, unmute, muted } = useSound()
@@ -12,8 +15,8 @@ const Mute: FC = () => {
 
     return (
         <>
-            <button onClick={handleClick}>
-                {muted ? <GoMute size={50} /> : <GoUnmute size={50} />}
+            <button onClick={handleClick} style={{ background: 'none', padding: 5, borderRadius: 10 }}>
+                {muted ? <GoMute color='#2ad146' size={30} /> : <GoUnmute color='#2ad146' size={30} />}
             </button>
         </>
     )
