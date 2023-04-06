@@ -8,16 +8,8 @@ const page: Page = {
   title: 'Home',
   options: [
     {
-      name: 'I am an option',
-      path: 'path/to/nowhere'
-    },
-    {
       name: 'Projects',
       path: 'screens/projects'
-    },
-    {
-      name: 'Memes',
-      path: 'memes'
     },
     {
       name: 'Test',
