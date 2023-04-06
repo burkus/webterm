@@ -37,6 +37,8 @@ export default function useKeyControls(options: Option[]) {
                 return increaseIndex()
             case 'Enter':
                 return followSelectedUrl()
+            case 'e':
+                return followSelectedUrl()
         }
     }, [increaseIndex, decreaseIndex, followSelectedUrl])
 
